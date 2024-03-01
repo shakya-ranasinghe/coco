@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background: url(coco.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;      
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    background: transparent;
+    transition: all ease .50s;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    align-content: baseline;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+}
+.navlist a{
+    margin: 0 30px;
+    padding: 2px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all ease .50s;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid plum;
+}
+.navlist a.active{
+    border-bottom: 2px solid white;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+
+.r-btn{
+    display: inline-block;
+    background: transparent;
+    padding: 9px 20px;
+    border: 1px solid #f5dca8;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-right: 20px;
+    color: #fff;
+    transition: all ease .50s;
+    z-index: 1000;
+}
+
+.r-btn:hover{
+    transform: scale(1.06);
+    color: plum;
+    background: #fff;
+    border: 1px solid #fff;
+}
+#menu-icon{
+    color: white;
+    font-size: 38px;
+    z-index: 1001;
+    cursor: pointer;
+    padding-top: 13px;
+    display: none;
+}
+section{
+    padding: 0 15%;
+}
+.coco{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+.main-text{
+    align-items: center;
+    justify-self: center;
+}
+h1{
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 80px;
+    color: plum;
+    align-content: center;
+}
+p{
+    font-family: "Satisfy", cursive;
+    color: whitesmoke;
+}
+@media (max-width: 1350px){
+    nav{
+        padding: 20px 5%;
+    }
+    section{
+        padding: 0px 5%;
+    }
+}
+@media (max-width: 860px){
+    #menu-icon{
+        display: block;
+    }
+}
